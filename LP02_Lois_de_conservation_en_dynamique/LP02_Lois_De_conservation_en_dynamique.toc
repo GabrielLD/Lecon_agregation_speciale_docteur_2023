@@ -1,0 +1,12 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Grandeurs conservées}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{La quantité de mouvement}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Théorême de l'énergie cinétique}{2}{0}{1}
+\beamer@subsectionintoc {1}{3}{Énergie mécanique}{2}{0}{1}
+\beamer@subsectionintoc {1}{4}{Point mobile sans frottement sur une sphère}{2}{0}{1}
+\beamer@sectionintoc {2}{Application aux chocs}{2}{0}{2}
+\beamer@subsectionintoc {2}{1}{Conservation de la quantité de mouvement}{2}{0}{2}
+\beamer@subsectionintoc {2}{2}{Conservation de l'énergie mécanique}{2}{0}{2}
+\beamer@sectionintoc {3}{Mouvement à force centrale}{2}{0}{3}
+\beamer@subsectionintoc {3}{1}{TMC dans un référentiel galiléen - Loi des aires}{2}{0}{3}
+\beamer@subsectionintoc {3}{2}{Conséquences de la conservation de l'énergie-cas des satellites}{5}{0}{3}

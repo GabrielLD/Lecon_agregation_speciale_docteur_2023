@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Notion de viscosité}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Contrainte visqueuse}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Ordres de grandeur ($T=20^\circ ~\rm C$)}{3}{0}{1}
+\beamer@sectionintoc {2}{Exemple de l'écoulement de Poiseuille}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Champ de vitesse de l'écoulement de Poiseuille}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Mesure de la viscosité}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Dissipation de l'énergie}{5}{0}{2}
+\beamer@subsectionintoc {2}{4}{Différents régimes d'écoulement (laminaire / turbulents)}{5}{0}{2}

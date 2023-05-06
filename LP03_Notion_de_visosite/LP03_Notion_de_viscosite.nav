@@ -1,0 +1,33 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Notion de viscosité}{3}{Notion de viscosité}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Contrainte visqueuse}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{3}{Ordres de grandeur ($T=20^\circ ~\rm C$)}}
+\headcommand {\slideentry {1}{2}{1}{3/3}{Ordres de grandeur ($T=20^\circ ~\rm C$)}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\sectionentry {2}{Exemple de l'écoulement de Poiseuille}{4}{Exemple de l'écoulement de Poiseuille}{0}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Champ de vitesse de l'écoulement de Poiseuille}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Champ de vitesse de l'écoulement de Poiseuille}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Mesure de la viscosité}}
+\headcommand {\beamer@subsectionpages {5}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{5}{Dissipation de l'énergie}}
+\headcommand {\beamer@subsectionpages {5}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{5}{Différents régimes d'écoulement (laminaire / turbulents)}}
+\headcommand {\slideentry {2}{4}{1}{5/5}{Différents régimes d'écoulement (laminaire / turbulents)}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@partpages {1}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@sectionpages {4}{5}}
+\headcommand {\beamer@documentpages {5}}
+\headcommand {\gdef \inserttotalframenumber {5}}
