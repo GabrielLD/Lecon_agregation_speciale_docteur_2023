@@ -1,0 +1,26 @@
+\frametitle{\insertsubsection }
+\begin{minipage}{.45\linewidth}
+
+        \begin{equation}
+            \left( \dfrac{\partial F_{tot}}{\partial A}\right)_{V,T,n}=\gamma
+        \end{equation}
+
+        La tension de surface dépend de la concentration et de la température.
+
+        \begin{equation}
+            Ma = \dfrac{\partial \gamma}{\partial x} \dfrac{Q}{2 \pi \nu \eta\kappa}
+        \end{equation}
+
+        \begin{itemize}
+            \item $x =$ concentration ou la température
+            \item $\kappa$ coefficient de diffusion de particules ou thermique
+        \end{itemize}
+    \end{minipage}
+    \begin{minipage}{.45\linewidth}
+        \begin{figure}[ht]
+            \centering
+            %\includegraphics[width=.6\textwidth]{marangoniMSC.jpg}
+            \href{https://hebergement.universite-paris-saclay.fr/supraconductivite/marangoni/marangoni.html#home}{\includegraphics[width=.8\textwidth]{marangoniMSC.jpg}}
+            \caption{Effet Marangoni }
+        \end{figure}
+    \end{minipage}
