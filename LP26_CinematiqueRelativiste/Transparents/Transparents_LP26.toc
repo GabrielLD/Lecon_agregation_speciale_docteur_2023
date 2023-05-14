@@ -1,0 +1,11 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{I. Les problèmes de la cinématique classique}{2}{0}{2}
+\beamer@subsectionintoc {2}{1}{I.1. Relativité galiléenne}{2}{0}{2}
+\beamer@subsectionintoc {2}{2}{I.2. Qu'en est-il de l'électromagnétisme ?}{3}{0}{2}
+\beamer@sectionintoc {3}{II. L'Expérience de Michelson et Morley}{4}{0}{3}
+\beamer@subsectionintoc {3}{1}{II.1. Dispositif}{4}{0}{3}
+\beamer@sectionintoc {4}{III.Les fondements de la relativité restreinte}{7}{0}{4}
+\beamer@subsectionintoc {4}{1}{III.1. Postulats de la relativité restreinte}{7}{0}{4}
+\beamer@subsectionintoc {4}{2}{III.3. Conséquences de la relativité restreinte: Le train d'Einstein}{8}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{9}{0}{5}

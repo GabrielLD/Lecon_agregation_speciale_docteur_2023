@@ -1,0 +1,139 @@
+<Regressi>
+  <SOURCE>
+    <Logiciel>Regressi</Logiciel>
+    <Version>3.05</Version>
+    <Acquisition>PRESSE-PAPIER</Acquisition>
+    <Date>06/05/2023 09:36:01</Date>
+    <Copyright>Jean-Michel Millet</Copyright>
+  </SOURCE>
+  <OPTIONS>
+    <Trigo>1</Trigo>
+    <NbreDerivee>5</NbreDerivee>
+  </OPTIONS>
+  <Memo>r0
+e
+hbar
+A
+a=4*e/hbar*SQRT(malpha*(Z-2)*r0/(Pi*epsilon0))*A^(1/6)
+
+b=e^2*(Z-2)/(2*hbar*epsilon0)*SQRT(2*malpha)
+
+"lnT = a-b/SQRT(E*e*1e6)"
+lntn=ln(2*r0*SQRT(malpha/(2*E))*A^(1/3))
+lnth2=lntn+ln(ln(2))-lnT
+lnth=lntn+ln(ln(2))-a+b/SQRT(E*e*1e6)
+lnexp=ln(tauhalf)
+invsqrtE=1/SQRT(E)
+</Memo>
+  <VARIABLE Nom="Z">
+    <Unite></Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Controle>1</Controle>
+    <Valeur Page="1">84 86 86 88 88 88 90 90 90 90 90 92 92 92 92 92 92 92 92 94 94 94 94 94 96 96 96</Valeur>
+  </VARIABLE>
+  <VARIABLE Nom="A">
+    <Unite></Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">210 291 220 223 224 226 227 228 229 230 232 228 230 232 233 234 235 236 238 236 238 239 240 242 240 242 244</Valeur>
+  </VARIABLE>
+  <VARIABLE Nom="E">
+    <Unite>J</Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">5.304 6.741 6.288 5.557 5.672 4.773 5.765 5.358 4.858 4.657 4.05 6.59 5.6 5.21 4.817 4.7 4.394 4.45 4.19 5.75 5.48 5.148 5.151 4.88 6.4 6.1 5.89</Valeur>
+  </VARIABLE>
+  <VARIABLE Nom="tauhalf">
+    <Unite>s</Unite>
+    <Precision>3</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">11960000 3.96 55.8 987600 313400 50490000000 1531000 60360000 231600000000 2379000000000 4.418E17 558 1814000 2304000000 5043000000000 7576000000000 2.221E16 7.258E15 1.389E17 90190000 2769000000 760800000000 207000000000 11770000000000 2333000 14070000 571500000</Valeur>
+  </VARIABLE>
+  <CONSTANTE Nom="malpha">
+    <Unite>kg</Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">6.6465E-27</Valeur>
+  </CONSTANTE>
+  <CONSTANTE Nom="epsilon0">
+    <Unite>F/m</Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">8.8542E-12</Valeur>
+  </CONSTANTE>
+  <CONSTANTE Nom="hbar">
+    <Unite>kg*m^²/s</Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">1.0546E-34</Valeur>
+  </CONSTANTE>
+  <CONSTANTE Nom="r0">
+    <Unite>m</Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">1.4E-15</Valeur>
+  </CONSTANTE>
+  <CONSTANTE Nom="e">
+    <Unite>C</Unite>
+    <Precision>6</Precision>
+    <GenreCalcul>0</GenreCalcul>
+    <Description></Description>
+    <Valeur Page="1">1.6022E-19</Valeur>
+  </CONSTANTE>
+  <MODELE>
+    <Modelisation>lnth=ath+bth*invsqrtE
+lnexp=aexp+bexp*invsqrtE</Modelisation>
+    <DEBUT Index="1" Page="1">0</DEBUT>
+    <FIN Index="1" Page="1">26</FIN>
+  </MODELE>
+  <Graphe>
+    <COORD Index="1">
+      <LIGNE>1</LIGNE>
+      <COULEUR>0</COULEUR>
+      <MOTIF>0</MOTIF>
+      <X>invsqrtE</X>
+      <Y>lnth</Y>
+      <TRACE>3</TRACE>
+      <MONDE>1</MONDE>
+      <GRADUATION>0</GRADUATION>
+      <ZERO>0</ZERO>
+      <INVERSE>0</INVERSE>
+    </COORD>
+    <COORD Index="2">
+      <LIGNE>1</LIGNE>
+      <COULEUR>16711680</COULEUR>
+      <MOTIF>1</MOTIF>
+      <X>invsqrtE</X>
+      <Y>lnexp</Y>
+      <TRACE>3</TRACE>
+      <MONDE>1</MONDE>
+      <GRADUATION>0</GRADUATION>
+      <ZERO>0</ZERO>
+      <INVERSE>0</INVERSE>
+    </COORD>
+    <OPTIONS>
+      <OptGraphe>9</OptGraphe>
+      <OptModele>2</OptModele>
+      <SuperPage>0</SuperPage>
+      <Ellipse>0</Ellipse>
+      <ProjeteVecteur>0</ProjeteVecteur>
+      <UseDefault>0</UseDefault>
+      <FilDeFer>0</FilDeFer>
+      <ProlongeVect>0</ProlongeVect>
+      <CouleurVitesseImposee>1</CouleurVitesseImposee>
+      <ReperePage>2</ReperePage>
+      <OrdreLissage>3</OrdreLissage>
+      <NvecteurMax>32</NvecteurMax>
+      <NtexteMax>32</NtexteMax>
+    </OPTIONS>
+  </Graphe>
+</Regressi>
