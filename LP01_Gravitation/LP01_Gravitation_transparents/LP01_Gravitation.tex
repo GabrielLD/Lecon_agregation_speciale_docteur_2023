@@ -1,0 +1,70 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Gravitation}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE\\
+        \textbf{Prérequis} & Cinénatique et dynamique d'un point matériel\\
+        &			Référentiels galiléens\\
+        & 			Force d'inertie
+    \end{tabularx}
+\end{frame}
+
+
+\section{Interaction gravitationnelle}
+
+\subsection{Force de gravitation}
+\subsection{Analogie avec la loi de Coulomb}
+
+\begin{frame}{\insertsubsection}
+    \begin{table}
+        \centering
+\resizebox{\columnwidth}{!}{%
+    \begin{tabular}{|c|c|c|}
+        \hline
+        & Gravitation & Électrostatique \\ \hline
+        Grandeur caractéristique & masse $m$ & charge $q$\\ \hline
+        Force & $\vec{F}=-G\dfrac{m_1m_2}{r^2}\vec{u}_r$ &$\vec{F}=-\frac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r^2}\vec{u}_r$\\  \hline
+        Constante caractéristique & $-G$ & $\frac{1}{4\pi\epsilon_0}$ \\ \hline
+        Lien  entre le champ et la force & $\vec{F} = m_1\vec{\mathcal{G}}$ & $\vec{F} = q_1\vec{E}(r)$\\ \hline
+        Expression du champ pour un corps ponctuel & $\vec{\mathcal{G}}(r)=-G\dfrac{m_2}{r^2}\vec{u}_r$ & $\vec{\mathcal{E}}(r)=-\frac{1}{4\pi\epsilon_0}\dfrac{q_2}{r^2}\vec{u}_r$ \\ \hline
+    \end{tabular}}
+    \pause
+    \begin{itemize}
+        \item $G = \num{6.670e-11}\rm~N\cdot m^2\cdot kg^{-1}$
+        \item $|q|=e=\num{1.602e-19}~\rm C$    
+        \item masse du proton $m_p = \num{1.67262192e-27}~\rm kg$
+        \item masse de l'électron $m_e = \num{9.109382e-31}~\rm  kg$
+        \item $\epsilon_0 = \num{8.85418782e-12}~\rm F\cdot m^{-1}$ 
+    \end{itemize}
+\end{table}
+\end{frame}
+
+\subsection{Propriétés du champ de gravitation}
+\subsection{Champ de pesanteur terrestre}
+
+\section{Dynamique dans un référentiel non galiléen}
+\subsection{Terme de Marées}
+\subsection{Limite de Roche}
+
+
+% \maketitle
+% --------- Sommaire ---------
+% \begin{frame}
+%     \tableofcontents
+% \end{frame}      
+% ----------------------------
+
+\end{document}

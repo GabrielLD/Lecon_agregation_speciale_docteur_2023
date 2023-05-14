@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Interaction gravitationnelle}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Force de gravitation}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Analogie avec la loi de Coulomb}{2}{0}{1}

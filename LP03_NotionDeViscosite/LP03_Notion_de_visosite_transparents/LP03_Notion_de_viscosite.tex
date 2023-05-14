@@ -1,0 +1,75 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Notion de viscosité d'un fluide, écoulement visqueux}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE\\
+        \textbf{Prérequis} & Hydrostatique\\
+        &			Cinématique des fluides\\
+        & 			Mécanique
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+\section{Notion de viscosité}
+\subsection{Contrainte visqueuse}
+\subsection{Ordres de grandeur ($T=20^\circ~\rm C$)}
+\begin{frame}
+    \begin{table}
+        \centering
+        \resizebox{\columnwidth}{!}{
+    \begin{tabular}{|c|c|c|}
+        \hline
+        &Viscosité dynamique $\eta$ (Pa$\cdot$s)& Viscosité cinématique $\nu=\eta/\rho$ ($\rm m^2\cdot s^{-1}$ et $P = 1$ bar) \\ \hline
+        
+        Eau & \num{e-3}& \num{1.006e-6} \\ \hline
+        Air & \num{18.2e-6}&\num{15.1e-6} \\ \hline
+        Glycérine & 1.49 & \num{11180e-6} \\ \hline
+        mercure & \num{1.55e-3} & \num{0.116e-6} \\ \hline
+        H2 & \num{8.83e-6} & \num{105e-6} \\ \hline
+    \end{tabular}}
+    \caption{Cours de Marc Rabaud \url{http://www.fast.u-psud.fr/~rabaud/NotesCours_Agreg.pdf}}
+\end{table}
+\end{frame}
+
+\section{Exemple de l'écoulement de Poiseuille}
+\subsection{Champ de vitesse de l'écoulement de Poiseuille}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{Poiseuille_ens_lyon.png}
+        \caption{\url{https://culturesciencesphysique.ens-lyon.fr/ressource/physique-animee-poiseuille.xml}}
+    \end{figure}
+\end{frame}
+
+\subsection{Mesure de la viscosité}
+\subsection{Dissipation de l'énergie}
+\subsection{Différents régimes d'écoulement (laminaire / turbulents)}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{laminaire_Q75p63_texposure2ms_fps100.png}
+        \caption{écoulement laminaire: $v = 14~\rm m\cdot s^{-1}$, $d =337~\rm \mu m $, $Re = 314$}
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{turbulent_Q157p87_texposure2ms_fps100_fumee_2_40images.png}
+        \caption{écoulement turbulent: $v = 29~\rm m\cdot s^{-1}$, $d =337~\rm \mu m$, $Re = 652$}
+    \end{figure}
+\end{frame}
+\end{document}
