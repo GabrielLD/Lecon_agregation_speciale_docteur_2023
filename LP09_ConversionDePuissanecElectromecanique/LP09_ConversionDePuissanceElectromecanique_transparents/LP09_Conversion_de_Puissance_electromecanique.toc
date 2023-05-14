@@ -1,0 +1,14 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Contacteur électromagnétique en translation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Principe de fonctionnement}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Énergie magnétique emmagasinée}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Force Électromagnétique}{5}{0}{1}
+\beamer@subsectionintoc {1}{4}{Généralisation}{7}{0}{1}
+\beamer@sectionintoc {2}{Machine à courant continu}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Structure}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Rôle du collecteur}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Constante électromécanique}{10}{0}{2}
+\beamer@subsectionintoc {2}{4}{Point de fonctionnement}{11}{0}{2}
+\beamer@subsectionintoc {2}{5}{Bilan de puissance}{12}{0}{2}
+\beamer@sectionintoc {3}{Moteur synchrone}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Structure}{13}{0}{3}

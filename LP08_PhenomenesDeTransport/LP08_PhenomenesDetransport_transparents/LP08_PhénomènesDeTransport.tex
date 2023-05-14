@@ -1,0 +1,92 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Phénomènes de transport}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE\\
+        \textbf{Prérequis} & thermopdynamique à l'équilibre \\
+        & hydrodynamique
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Systèmes hors équilibres}
+\subsection{Évolution des grandeurs conservées}
+
+
+\subsection{Nécessité de l'équilibre local}
+
+\begin{frame}{\insertsubsection}
+\begin{enumerate}
+    \item \textbf{Hypothèse d'équilibre local:}
+
+    En tout point du système macroscopique, un sous système de taille mésoscopique est supposé constamment et instantanément à l'équilibre. Cela suppose que le temps typique d'évolution du système macroscopique $\tau_{ev}$ et le temps typique de mise à l'équilibre d'un sous système vérifient la condition : 
+    $$\tau_{ev} \gg tau_{eq}$$
+
+    \item Le système est suffisamment proche de l'équilibre pour que les lois de transport donnant les différents vecteurs densité de courant $j$ soient linéaires par rapport à leur cause.
+\end{enumerate}
+
+En prenant en compte ces deux hypothèses: Toutes les grandeurs intensives sont bien définies en tout point du système et à tout instant (T,P, $\mu$). Les milieux que nous considérons sont supposés homogènes et isotropes à l'équilibre, les courants sont donc faibles.
+
+\end{frame}
+\section{Diffusion de particules}
+
+\subsection{Loi de Fick}
+\subsection{Équation de diffusion}
+\begin{frame}{\insertsubsection}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{TableauPhenomenesTransportsBUP.png}
+\end{figure}
+\end{frame}
+
+
+\subsection{Mise en évidence expérimentale: diffusion du glycerol dans l'eau}
+\section{Transport de l'énergie sous forme de transfert thermique}
+\subsection{Modes de transports possibles}
+\subsection{Loi de Fourier}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{TableauPhenomenesTransportsBUP.png}
+    \end{figure}
+\end{frame}
+\subsection{Équation de la chaleur}
+
+\begin{frame}{\insertsubsection}
+    On combine l'équation de conservation avec la loi de Fourier :
+    \begin{equation}
+        \begin{array}{cc}
+        \dfrac{\partial T}{\partial t}=D_{th}\Delta T & D_{th}=\dfrac{\lambda}{\rho c_p}
+    \end{array}
+    \end{equation}
+\end{frame}
+\subsection{Rayonnement}
+
+\begin{frame}{\insertsubsection}
+    Loi de Stefan Boltzman : 
+    \begin{equation}
+        \phi = \sigma T^4
+    \end{equation}
+    Loi de Wien:
+    \begin{equation}
+        \lambda_mT = 2900 \rm ~\mu mK
+    \end{equation}
+\end{frame}
+
+\end{document}

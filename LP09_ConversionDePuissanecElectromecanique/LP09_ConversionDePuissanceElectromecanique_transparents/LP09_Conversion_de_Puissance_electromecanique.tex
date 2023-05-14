@@ -1,0 +1,141 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Conversion de Puissance Électromécanique}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE PSI\\
+        \textbf{Prérequis} & Électromagnétisme \\
+        & mécanique
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Contacteur électromagnétique en translation}
+
+\subsection{Principe de fonctionnement}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{ContacteurElectromagnetique.png}
+        \caption{Contacteur électromagnétique}
+    \end{figure}
+\end{frame}
+
+\subsection{Énergie magnétique emmagasinée}
+
+\begin{frame}{\insertsubsection}
+\textbf{Méthodologie}
+\begin{enumerate}
+    \item Théorême d'Ampère
+    \item Conservation du flux du champ magnétique
+    \item Expression du champ B  en fonction de l'ntensité
+    \item Induction propre
+    \item Énegie magnétique emmagasinée
+\end{enumerate}
+\end{frame}
+
+\subsection{Force Électromagnétique}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{ForceElectromagnetique.png}
+    \end{figure}
+    \pause
+    Il faut noter que : 
+    \begin{itemize}
+        \item $F_M\propto i ^2$ c'est une force de rappel quelque soit le signe de $i$  et est nulle en moyenne dans le temps pour une excitation sinusoïdale
+        \item Ce type de dispositif peut servir de contacteur électromagnétique permettant de commander la fermeture et l'ouverture d'un circuit électrique via le déplacement de la partie mobile, qui en l'absence de champ magnétique est ramenée à sa position initiale par l'intermédiaire d'un ressort.
+    \end{itemize}
+\end{frame}
+
+\subsection{Généralisation}
+
+\begin{frame}{\insertsubsection}
+    On peut généraliser l'expression de la force : 
+
+    \begin{equation}
+        F = \left(\dfrac{\partial E}{\partial x}\right)_{\Phi}
+    \end{equation}
+
+    Pour un contacteur en rotation autour d'un axe fixe repéré par un angle $\theta$, on utilisera plutôt le moment des actions s'exerçant sur le contacteur : $\Gamma$
+    \begin{equation}
+        \Gamma = \left(\dfrac{\partial E}{\partial \theta}\right)_{\Phi}.
+    \end{equation}
+\end{frame}
+\section{Machine à courant continu}
+\subsection{Structure}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{StructureMCC.png}
+        \caption{Physique expérimentale, Jolidon}
+    \end{figure}
+\end{frame}
+
+\subsection{Rôle du collecteur}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{RotorCollecteur.png}
+        \caption{Physique expérimentale, Jolidon}
+    \end{figure}
+\end{frame}
+
+\subsection{Constante électromécanique}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{SchemaPrincipe.png}
+    \end{figure}
+\end{frame}
+
+\subsection{Point de fonctionnement}
+
+\begin{frame}{\insertsubsection}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.5\textwidth]{CaracteristiqueMCCPointDeFonctionnement.png}
+	\caption{Caractéristique MCC, extrait du Jolidon}
+\end{figure}
+\end{frame}
+
+\subsection{Bilan de puissance}
+\begin{frame}{\insertsubsection}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{BillanPuissance.png}
+	\caption{Bilan de Puissance, extrait jolidon}
+\end{figure}
+\end{frame}
+\section{Moteur synchrone}
+\subsection{Structure}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}[ht]
+	\centering
+	\includegraphics[width=.5\textwidth]{StructureMachinesynchrone.png}
+	\caption{Schéma cours Naval}
+\end{figure}
+    \end{frame}
+
+\subsection{Champ dans l'entrefer}
+
+\end{document}

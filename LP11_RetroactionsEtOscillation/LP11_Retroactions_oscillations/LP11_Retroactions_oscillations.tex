@@ -1,0 +1,71 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon :Retroactions et oscillations}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE PSI\\
+        \textbf{Prérequis} & Programme de physique de première année \\
+        & Stabilité des système linéaires
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Retropaction}
+
+\begin{frame}{\insertsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{2entree_1.png}
+        \caption{Schéma blocs, rétroaction}
+    \end{figure}
+\end{frame}
+
+\subsection{Amplificateur linéaire}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{AOP.png}
+        \caption{Amplificateur}
+    \end{figure}
+\end{frame}
+\subsection{Amplificateur non inverseur}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{Noninverseur.png}
+        \caption{Montage non inverseur}
+    \end{figure}
+\end{frame}
+
+\section{Oscillateurs quasi sinusoïdaux}
+\subsection{Definition}
+\subsection{Oscillateur à pont de Wien}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{PontDeWien.png}
+        \caption{Oscillateur à pont de Wien}
+    \end{figure}
+\end{frame}
+
+\subsection{Manipulation}
+
+\end{document}
