@@ -1,0 +1,15 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Lois de l'optique géométrique}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Lois de Snell-Descartes}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{lentille mince}{3}{0}{1}
+\beamer@sectionintoc {2}{Microscope optique (deux lentilles)}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Description}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Grossissement, grandissement}{3}{0}{2}
+\beamer@subsectionintoc {2}{3}{ouverture numérique}{3}{0}{2}
+\beamer@sectionintoc {3}{Limites et Aberrations}{3}{0}{3}
+\beamer@subsectionintoc {3}{1}{Limite du pouvoir de résolution}{3}{0}{3}
+\beamer@subsectionintoc {3}{2}{aberration sphérique,chromatique, profondeur de champ}{3}{0}{3}
+\beamer@sectionintoc {4}{Microscope en champ proche}{3}{0}{4}
+\beamer@subsectionintoc {4}{1}{Diffraction d'une onde plane}{3}{0}{4}
+\beamer@subsectionintoc {4}{2}{Ondes évanescente}{3}{0}{4}
+\beamer@subsectionintoc {4}{3}{Réalisation pratique}{3}{0}{4}

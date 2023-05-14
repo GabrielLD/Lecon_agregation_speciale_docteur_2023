@@ -1,0 +1,10 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Principe de l'interférométrie}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Limites de la division du front d'onde}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Franges d'égales inclinaison}{3}{0}{1}
+\beamer@subsectionintoc {1}{3}{Frange d'égale épaisseur}{3}{0}{1}
+\beamer@sectionintoc {2}{Interféromètre de Michelson}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Présentation du dispositif}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Configuration en lame d'air}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Configuration en coin d'air}{15}{0}{2}
+\beamer@sectionintoc {3}{Fabry Pérot}{16}{0}{3}

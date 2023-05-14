@@ -1,0 +1,49 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon :Microscopie optique}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE première année\\
+        \textbf{Prérequis} & Optique géométrique
+        
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Lois de l'optique géométrique}
+\subsection{Lois de Snell-Descartes}
+\subsection{lentille mince}
+\section{Microscope optique (deux lentilles)}
+\subsection{Description}
+\subsection{Grossissement, grandissement}
+\subsection{ouverture numérique}
+\section{Limites et Aberrations}
+\subsection{Limite du pouvoir de résolution}
+\subsection{aberration sphérique,chromatique, profondeur de champ}
+\section{Microscope en champ proche}
+\subsection{Diffraction d'une onde plane}
+\subsection{Ondes évanescente}
+\subsection{Réalisation pratique}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{MicroscopieEnChampProche.png}
+    \end{figure}
+    
+\end{frame}
+\end{document}

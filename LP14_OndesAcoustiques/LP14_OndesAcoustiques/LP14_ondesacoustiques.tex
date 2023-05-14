@@ -1,0 +1,90 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon :Ondes acoustiques}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE PSI\\
+        \textbf{Prérequis} & Thermodynamique \\
+        & Mécanique de première année \\
+        & Écoulement parfait \\
+        & Ondes électromagnétiques dans le vide \\
+        
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+\section{Équation de propagation}
+\subsection{Approximation acoustique}
+\subsection{équations locales}
+\subsection{Effet Doppler}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{EffetDoppler.png}
+        \caption{Manipulation effet Doppler}
+    \end{figure}
+
+\end{frame}
+    
+\section{Ondes planes progressives harmoniques}
+
+\subsection{Notation Complexes}
+\subsection{Notion d'impédance acoustique}
+\subsection{Aspect énergétique}
+\subsection{Intensité sonore}
+
+\begin{frame}{\insertsubsection}
+    \begin{table}
+        \begin{tabular}{|c|c|}\hline
+            Source & Intensité (dB) \\ \hline
+            Ronronnement d'un chat & 15 \\
+            Pièce calme & 30 \\
+            Voiture (à 10 m) & 50 \\
+            Conversation normale à 1 m & 60 \\
+           Avion au décollage & 125 \\ \hline
+        \end{tabular}
+        \caption{Tiré du Dunod PC - Ondes acoustiques dans les fluides}
+    \end{table}
+\end{frame}
+\section{Production, transmission et détection d'une onde sonore}
+\subsection{Ondes sphériques}
+\subsection{Adaptation d'impédance acoustique}
+
+\begin{frame}{\insertsubsection}
+    Coefficients de réflexion et transmission en puissance: 
+
+    \begin{equation}
+        \begin{array}{ccc}
+            R = \dfrac{|| \langle \vec{\Pi_0r}\rangle ||}{|| \langle \vec{\Pi_0r}\rangle ||} & T = \dfrac{|| \langle \vec{\Pi_0t}\rangle ||}{|| \langle \vec{\Pi_0i}\rangle ||}\\
+            R = \left(\dfrac{Z_1-Z_2}{Z_1+Z_2}\right)^2& T = \dfrac{4Z_1Z_2}{\left(Z_1+Z_2\right)^2} 
+        \end{array}
+    \end{equation}
+    \begin{table}
+        \begin{tabular}[pos]{|c|c|c|c|c|}
+            \hline
+            Milieu & air &sang/tissu & cerveau & squelette \\ \hline
+            Z ($kg~m^{-2}s^{-1}$) & 440 & \num{1.66e6}& \num{1.55e6}&\num{7.8e6}\\
+            \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+    \begin{frame}
+    Merci pour votre attention
+\end{frame}
+
+\end{document}
