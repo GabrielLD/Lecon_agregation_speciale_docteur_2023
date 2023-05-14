@@ -1,0 +1,70 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Modele d'un écoulement parfait}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE\\
+        \textbf{Prérequis} & Cinématique des fluides\\
+        & Hydrostatique \\
+        & 			Mécanique
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Modèle de l'écoulement parfait}
+\subsection{Définition}
+\subsection{Équation d'Euler}
+\begin{frame}{Conditions aux limites}
+    \begin{table}
+      \centering
+      \resizebox{\columnwidth}{!}{
+      \begin{tabular}{|c|c|c|}
+        \hline
+        Type d'interface & Écoulement parfait (Euler) & Écoulement visqueux (Navier Stokes) \\ \hline 
+        Paroi solide & $\begin{array}{ll} \left. v_\perp \right|_{\rm fluide} & = \left. v_\perp \right|_{\rm paroi}\\ P_{\rm fluide} & = P_{\rm paroi} \end{array}$& $ \begin{array}{ll} \vec{v}_{\rm fluide} & = \vec{v}_{\rm paroi};\\ P_{\rm fluide} &= P_{\rm paroi}\\ +& \text{équation sur} \text{la contrainte tangentielle} \end{array}$ \\ \hline
+        $\begin{array}{ll}\text{Interface fluide sans}\\ \text{tension de surface}\end{array}$ & $\begin{array}{ll} \left. v_\perp \right|_{\rm 2} & = \left. v_\perp \right|_{\rm 2}\\ P_{1} & = P_{2} \end{array}$ & $ \begin{array}{ll} \vec{v}_{1} & = \vec{v}_{2};\\ P_{1} &= P_{2}\\ +& \text{équation sur} \text{la contrainte tangentielle} \end{array}$ \\ \hline
+        $\begin{array}{ll}\text{Interface fluide avec}\\ \text{tension de surface}\end{array}$ & $\begin{array}{ll} \left. v_\perp \right|_{\rm 2} & = \left. v_\perp \right|_{\rm 2}\\ P_{1} -P_{2}& =\gamma\left(\frac{1}{R}+\frac{1}{R^\prime}\right) \end{array}$ & $ \begin{array}{ll} \vec{v}_{1} & = \vec{v}_{2};\\ +& \text{équation sur} \text{la contrainte tangentielle} \end{array}$ \\ \hline
+      \end{tabular}  
+      
+      }
+    \end{table}
+  \end{frame}
+
+\subsection{Conséquences}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        % \includegraphics[options]{name}
+        \caption{Illustration d'un écoulement parfait autour d'une boule (Hydrodynamique Physique Guyon HUlin Petit)}
+    \end{figure}
+    On peut également illustrer à l'aide de cette vidéo : \href{https://www.youtube.com/watch?v=2Z6UJbwxBZI&ab_channel=ryanhaart}{ici}
+\end{frame}
+
+\section{Théorême de Bernouilli}
+\subsection{énoncé}
+\subsection{Application}
+\section{Limite du modèle: écoulement réel}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        %\includegraphics[options]{name}
+        \caption{Insérer une image du tracer de la couche limite au voisinage d'une aile d'avion}
+    \end{figure}
+\end{frame}
+\end{document}

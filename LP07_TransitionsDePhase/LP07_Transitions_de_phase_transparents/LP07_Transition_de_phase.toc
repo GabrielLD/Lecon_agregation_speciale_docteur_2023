@@ -1,0 +1,12 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{États de la matière}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Trois phases principales}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Corps purs}{4}{0}{1}
+\beamer@sectionintoc {2}{Transitions solide-liquide vapeur}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Diagrammes des variables d'état}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Étude thermodynamique d'une transition de phase du premier ordre}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Mesure de la chaleur latente de vaporisation du diazote}{6}{0}{2}
+\beamer@subsectionintoc {2}{4}{Retard à la transition de phase: metastabilité}{6}{0}{2}
+\beamer@sectionintoc {3}{Transitions ferro para, transition du second ordre}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Modèle}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Comparaison aux résultats expérimentaux}{7}{0}{3}

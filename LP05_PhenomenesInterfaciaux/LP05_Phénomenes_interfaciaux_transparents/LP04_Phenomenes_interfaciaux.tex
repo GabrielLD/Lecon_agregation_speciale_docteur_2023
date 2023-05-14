@@ -1,0 +1,110 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Phénomènes interfaciaux dans les fluides}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE\\
+        \textbf{Prérequis} & Cinématique des fluides\\
+        & 			Mécanique, actions de contact \\
+        &   Interaction moléculaire \\
+        & Thermodynamique
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{\insertsection}
+    \begin{figure}
+    \centering
+    \includegraphics[width=.45\textwidth]{BulleSpherique.png}
+    \includegraphics[width=.45\textwidth]{BulleGeante.png}
+\end{figure}
+\end{frame}
+
+\section{Tension superficielle}
+\subsection{Approche microscopique}
+\subsection{Approche macroscopique}
+\section{Lois d'équilibre aux interfaces}
+\subsection{Loi de Laplace}
+
+\begin{frame}{\insertsubsection}
+    \begin{multicols*}{2}
+        \begin{figure}
+            \centering
+            \includegraphics[width=.5\textwidth]{2_La-pression-de-laplace_FR_C.png}
+        \end{figure}
+
+
+        \textbf{Lois de Laplace:}\\
+
+        \begin{equation}
+            \Delta P = \dfrac{2\gamma}{R}
+        \end{equation}
+
+        Plus la bulle est petite, plus la pression est grande à l'intérieur.
+    \end{multicols*}
+\end{frame}
+
+
+\subsection{Mouillage, loi d'Young Dupré}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.45\textwidth]{6_Le-mouillage_FR_A.png}
+        \includegraphics[width=.45\textwidth]{6_Le-mouillage_FR_B.png}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Longueur capillaire et nombre de Bond}
+\section{Loi de Jurin et mesure de la tension de surface}
+\subsection{Loi de Jurin}
+\subsection{Manipulation}
+\section{Phénomènes interfaciaux en régime dynamique}
+\subsection{Écoulement de Marangoni}
+
+\begin{frame}[fragile]{\insertsubsection}
+    \begin{minipage}{.45\linewidth}
+
+        \begin{equation}
+            \left( \dfrac{\partial F_{tot}}{\partial A}\right)_{V,T,n}=\gamma
+        \end{equation}
+
+        La tension de surface dépend de la concentration et de la température. 
+
+        \begin{equation} 
+            Ma = \dfrac{\partial \gamma}{\partial x} \dfrac{Q}{2 \pi \nu \eta\kappa} 
+        \end{equation}
+
+        \begin{itemize}
+            \item $x =$ concentration ou la température
+            \item $\kappa$ coefficient de diffusion de particules ou thermique
+        \end{itemize}
+    \end{minipage}
+    \begin{minipage}{.45\linewidth}
+        \begin{figure}[ht]
+            \centering
+            %\includegraphics[width=.6\textwidth]{marangoniMSC.jpg}
+            \href{https://hebergement.universite-paris-saclay.fr/supraconductivite/marangoni/marangoni.html#home}{\includegraphics[width=.8\textwidth]{marangoniMSC.jpg}}
+            \caption{Effet Marangoni }
+        \end{figure}
+    \end{minipage}
+\end{frame}
+
+\end{document}

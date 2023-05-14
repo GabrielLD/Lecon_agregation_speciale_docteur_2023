@@ -1,0 +1,161 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Transition de phase}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE\\
+        \textbf{Prérequis} & Gax parfait\\
+        & travail mécanique \\
+        & notion de système et d'equilibre thermodynamique \\
+        & transformations classiques en thermodynamique \\
+        & premier et second principe
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{États de la matière}
+\subsection{Trois phases principales}
+
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width= .5\textwidth]{Point_triple_deleau_enslyon.png}
+        \caption{\href{https://planet-terre.ens-lyon.fr/ressource/diagramme-lineaire-log.xml}{eduscol ens de lyon}}
+    \end{figure}
+\end{frame}
+
+\subsection{Corps purs}
+
+\section{Transitions solide-liquide vapeur}
+\subsection{Diagrammes des variables d'état}
+
+\begin{frame}{\insertsubsection}
+    \begin{minipage}{.48\linewidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{Courbe_vaporisation_Diu.png}
+        \caption{Courbe de vaporisation Diu p300}
+    \end{figure}
+    \end{minipage}
+    \begin{minipage}{.48\linewidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.1\textwidth]{Diagramme_corps_purs.png}
+        \caption{Courbe de vaporisation Diu p301}
+    \end{figure}
+\end{minipage}
+\end{frame}
+
+
+\begin{frame}{\insertsubsection}
+    \begin{minipage}{.48\linewidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{Isotherme_courbe_vaporisation.png}
+        \caption{Courbe de vaporisation Diu p300}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{.48\linewidth}
+    \begin{figure}
+        \centering
+        %\includegraphics[width=1\textwidth]{DiagrammePVT.png}
+
+        \includegraphics[width=1.2\textwidth]{DiagrammePVT.png}
+        \caption{Diagramme P,V et T pour un corps pur}
+    \end{figure}
+\end{minipage}
+\end{frame}
+
+% \begin{frame}{\insertsubsection}
+%     \begin{figure}
+%         \centering
+%         \includegraphics[width=1\textwidth]{DiagrammePVT.png}
+%         \caption{Diagramme P,V,T}
+%     \end{figure}
+% \end{frame}
+
+
+
+\subsection{Étude thermodynamique d'une transition de phase du premier ordre}
+\subsection{Mesure de la chaleur latente de vaporisation du diazote}
+\subsection{Retard à la transition de phase: metastabilité}
+\section{Transitions ferro para, transition du second ordre}
+\subsection{Modèle}
+\begin{frame}{\insertsubsection}
+    \textbf{Modèle de Landau (expression générale):}
+    \begin{equation}
+        G(T,M) = A_0(T)+\alpha(T)M^2+\frac{1}{2}\beta(T)M^4+...
+    \end{equation}
+
+    \textbf{Minimisation du potentiel (deux coniditions):}
+    \begin{equation}
+        \begin{array}{cc}
+            \left. \dfrac{\partial G}{\partial M}\right|_T = 0, &\left. \dfrac{\partial^2G}{\partial M^2}\right|_T >0\\
+            2\alpha M+2\beta M^3 = 0, & 2\alpha + 6\beta M^2 >0.
+        \end{array}
+    \end{equation}
+    \textbf{Solutions possibles:} 
+    \begin{equation}
+        \begin{array}{cc}
+            M_1=0,  & M_2=\left(-\dfrac{\alpha}{\beta}\right)^{1/2}\\
+            \left. \dfrac{\partial^2 G}{\partial M^2}\right|_T (M_1)=2\alpha, & \left.\dfrac{\partial^2 G}{\partial M^2}\right|_T(M_2)=-4\alpha.
+        \end{array}
+    \end{equation}
+
+\end{frame}
+\subsection{Comparaison aux résultats expérimentaux}
+\begin{frame}{\insertsubsection}
+    \begin{itemize}
+        \item Quand $T<T_c$, $M>0$, ce qui impose $\alpha$ et $\beta$ de signes opposés. On veut aussi une solution stable:
+        \begin{equation}
+            \left.\dfrac{\partial^2G}{\partial M^2}\right|_T(M=\sqrt{-\alpha/\beta})= 2\alpha+6\beta M^2=-4\alpha>0.
+        \end{equation}
+        Donc $\alpha<0$
+        \item Quand $T=T_c$, $M_2$ tend vers 0, en ce point on veut une stabilité donc :
+        \begin{equation}
+            \left. \dfrac{\partial^2}{\partial M^2}\right|_T\approx 2\alpha+6\beta M^2>0 \rightarrow \beta>0.
+        \end{equation}
+        \item Quand $T>T_c$, On veut $M=0$ et une solution stable. Cette fois cela impose :
+        \begin{equation}
+            \left. \dfrac{\partial^2G}{\partial M^2}\right|_T(M=0)=2\alpha>0.
+        \end{equation}
+        par continuité avec $T_c$, $\beta$ est positif aussi.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\insertsubsection}
+    \begin{minipage}{.48\linewidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{Ferro_para.png}
+    \end{figure}
+    \begin{equation}
+        G(T,M)\approx A_0(T) + a(T-T_c)M^2+\dfrac{\beta}{2}M^4
+    \end{equation}
+\end{minipage}
+\begin{minipage}{.48\linewidth}
+    On en déduit l'aimantation près de $T_c$:
+    \begin{equation}
+        M(T<T_c) = \sqrt{\dfrac{a}{\beta}(T_c-T)} 
+    \end{equation}
+    On peut aussi en déduire l'enthalpie, l'entropie et la capacité calorifique:
+
+    
+\end{minipage}
+\end{frame}
+\end{document}

@@ -1,0 +1,14 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Tension superficielle}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Approche microscopique}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Approche macroscopique}{4}{0}{2}
+\beamer@sectionintoc {3}{Lois d'équilibre aux interfaces}{4}{0}{3}
+\beamer@subsectionintoc {3}{1}{Loi de Laplace}{4}{0}{3}
+\beamer@subsectionintoc {3}{2}{Mouillage, loi d'Young Dupré}{5}{0}{3}
+\beamer@subsectionintoc {3}{3}{Longueur capillaire et nombre de Bond}{6}{0}{3}
+\beamer@sectionintoc {4}{Loi de Jurin et mesure de la tension de surface}{6}{0}{4}
+\beamer@subsectionintoc {4}{1}{Loi de Jurin}{6}{0}{4}
+\beamer@subsectionintoc {4}{2}{Manipulation}{6}{0}{4}
+\beamer@sectionintoc {5}{Phénomènes interfaciaux en régime dynamique}{6}{0}{5}
+\beamer@subsectionintoc {5}{1}{Écoulement de Marangoni}{6}{0}{5}
