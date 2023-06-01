@@ -1,0 +1,116 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Mécanisme de la conduction électrique dans les solides}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & CPGE deuxième année\\
+        \textbf{Prérequis} & Électronicétique \\
+        & Électromagnétisme \\
+        & équations de Maxwell \\
+        & Théorie cinétique des gaz
+        
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+
+\section{Modèle de Drude}
+\section{Vision quantique de la conduction électrique}
+\subsection{Distribution de Fermi Dirac}
+\begin{frame}{Gaz d'électrons libres 1D}
+\begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{Gaz1D.png}
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+    \begin{equation}
+        \begin{array}{cc}
+        -\dfrac{\hbar^2}{2m}\Delta\psi(x)=\epsilon\psi(x) & \text{ pour } 0 \geq x\geq L.
+        \end{array}
+    \end{equation}
+    Solution : 
+    \begin{equation}
+        \psi(x)=\sqrt{\dfrac{2}{L}}\sin(k_x x)
+    \end{equation}
+
+    \begin{equation}
+        \begin{array}{ccc}
+        \epsilon=\dfrac{\hbar^2k_x^2}{2m}, & k_x=n_x\dfrac{\pi}{L}, & n_x \text{ entier } >0.
+        \end{array}
+    \end{equation}
+\end{minipage}
+\pause
+Densité d'états dans l'espace des $k$ et d'énergie:
+\begin{equation}
+    \begin{array}{cc}
+    g(k_x)=\dfrac{L}{\pi}\times 2 (\uparrow\downarrow), &  g(\epsilon)=L\dfrac{\sqrt{2m}}{\hbar\pi}\dfrac{1}{\sqrt{\epsilon}}.
+    \end{array}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Gaz d'électrons libres 3D}
+    Solution: 
+    \begin{equation}
+        \begin{array}{cc}
+        \psi(x,y,z) = \sqrt{\dfrac{8}{V}}\sin(k_x x)\sin(k_y y)\sin(k_z z), & \epsilon = \dfrac{\hbar^2\vec{k}^2}{2m}
+        \end{array}
+    \end{equation}
+Chaque solution est repérée par un vecteur d'onde $\vec{k} = \left(k_x=n_x\frac{pi}{Lx}, k_y=n_y\frac{\pi}{Ly}, k_z=n_z\frac{\pi}{Lz}\right)$.
+\pause
+
+Densité d'états dans l'espace des $\vec{k}$
+
+\begin{equation}
+    g(\vec{k})d^3\vec{k}=\dfrac{d^3\vec{k}}{\frac{\pi}{L_x}\frac{\pi}{L_y}\frac{\pi}{L_z}}\times 2 (\uparrow\downarrow) = \dfrac{2V}{pi^3}d^3\vec{k}\rightarrow g(\vec{k})=\dfrac{V}{\pi^3}\times 2(\uparrow\downarrow)
+\end{equation}
+
+
+Densité d'états en énergie
+\[g(\epsilon)d\epsilon=g(\vec{k})dV_{k}=g(\vec{k})4\pi k^2dk\times \dfrac{1}{8}\]
+Soit : 
+\begin{equation}
+g(\epsilon) = \dfrac{V}{2\pi^2}\left(\dfrac{2m}{\hbar^2}\right)^{3/2}\epsilon^{1/2}.    
+\end{equation}
+\end{frame}
+
+\subsection{Comment relier ce modèle à la conductivité électrique}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{SphereDeFermi.png}
+    \end{figure}
+\end{frame}
+\section{Matériaux isolants/ conducteurs/ semi-conducteurs}
+
+\subsection{Théorie des bandes}
+
+\begin{frame}{Théorie des bandes}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{PotentielPeriodique.png}
+    \end{figure}
+\end{frame}
+
+\subsection{Isolant, conducteur}
+\begin{frame}{\insertsubsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{Isolant-conducteur.png}
+    \end{figure}
+\end{frame}
+\end{document}

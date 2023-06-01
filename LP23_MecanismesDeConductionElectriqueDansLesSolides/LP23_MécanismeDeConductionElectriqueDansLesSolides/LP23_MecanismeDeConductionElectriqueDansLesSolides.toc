@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Modèle de Drude}{3}{0}{1}
+\beamer@sectionintoc {2}{Vision quantique de la conduction électrique}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Distribution de Fermi Dirac}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Comment relier ce modèle à la conductivité électrique}{7}{0}{2}
+\beamer@sectionintoc {3}{Matériaux isolants/ conducteurs/ semi-conducteurs}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Théorie des bandes}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Isolant, conducteur}{9}{0}{3}
