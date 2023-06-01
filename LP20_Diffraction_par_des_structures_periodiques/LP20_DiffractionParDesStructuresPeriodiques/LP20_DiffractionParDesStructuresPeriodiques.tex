@@ -1,0 +1,64 @@
+% IMPORTANT: PLEASE USE XeLaTeX FOR TYPESETTING
+\documentclass[10pt]{beamer}
+\input{pckg_beamer.tex}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[scientific-notation=true]{siunitx}
+\usetikzlibrary{matrix}
+\newcommand{\diff}{\mathrm{d}}
+
+\title{Leçon : Diffraction par des structures périodiques}
+
+% document body
+\begin{document}
+\begin{frame}{}
+    \titlepage
+
+    \begin{tabularx}{\textwidth}{l@{:\,\,}X}
+        \textbf{Niveau} 	  & Licence 3\\
+        \textbf{Prérequis} & Optique géométrique \\
+        & Diffraction de Fraunhoffer\\
+        & Physique du solide
+        
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Diffraction par un objet périodique}
+\section{Mesure de structures périodiques, manipulation}
+\section{Étude des cristaux par diffraction des rayons X}
+\begin{frame}{Loi de Bragg}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{ReseauDeBragg.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Réseau cristallin}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.5\textwidth]{cristal.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Diffraction par rayons X d'un monocristal}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.5\textwidth]{diffraction_monocristal.png}
+        \caption{extrait de culture science ens lyon}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Technique}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.5\textwidth]{Diffractometre.png}
+        \caption{culture science ens lyon}
+    \end{figure}
+    
+\end{frame}
+
+\end{document}

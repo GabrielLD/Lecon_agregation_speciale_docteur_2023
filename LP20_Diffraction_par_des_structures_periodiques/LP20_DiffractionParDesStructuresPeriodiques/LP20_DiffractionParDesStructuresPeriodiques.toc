@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Diffraction par un objet périodique}{3}{0}{1}
+\beamer@sectionintoc {2}{Mesure de structures périodiques, manipulation}{3}{0}{2}
+\beamer@sectionintoc {3}{Étude des cristaux par diffraction des rayons X}{3}{0}{3}
