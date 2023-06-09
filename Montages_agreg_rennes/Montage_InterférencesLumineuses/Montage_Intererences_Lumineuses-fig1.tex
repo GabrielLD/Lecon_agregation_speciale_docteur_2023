@@ -1,0 +1,24 @@
+\documentclass{scrartcl}
+\usepackage[driver=dvips]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\usepackage{pstricks}
+\input{./Montage_Intererences_Lumineuses-fig1-config.tex}
+\makeatletter
+\pst@dima=2\psxunit
+\pst@dimc=-2\psxunit
+\advance\pst@dima by -\pst@dimc
+\ifdim\pst@dima<0pt \pst@dima=-\pst@dima\fi
+\pst@dimb=16\psyunit
+\pst@dimc=0\psyunit
+\advance\pst@dimb by -\pst@dimc
+\ifdim\pst@dimb<0pt \pst@dimb=-\pst@dimb\fi
+\geometry{paperwidth=\pst@dima, paperheight=\pst@dimb, margin=0pt}
+\makeatother
+\begin{document}
+\begin{document}(-2,0)(2,16)
+\else \ifpst@dosage@PHmetre \pspicture (-5,0)(3,5)\else \pspicture (-2,0)(2,5)\fi \fi \rput (0,3.5){\pstBallon }\ifPst@burette \rput (0,4.5){\psclip {\pscustom [linestyle=none]{\pst@burette@corps }} \psframe *[linecolor=\psk@Burette@CouleurReactif ](-1,-1)(! 1 \the \pst@cnta \space 0.32 mul 2.68 add) \endpsclip } \fi \psset {linewidth=0.053}\ifPst@burette \rput (0,4.5){\pst@burette@corps \pst@burette@robinet \pst@burette@graduation }\fi \ifpst@dosage@PHmetre \rput (-3,0){\pst@dosage@pHmetre }\fi \ifPst@Agitateur@Magnetique \rput (0,1.5){\pst@dosage@aimant }\rput (0,0){\pst@dosage@support }\else \psframe (-1.5,0)(1.5,1.5)\fi \ifPst@burette \uput [0](2,11){\psk@Reactif@Burette }\fi \uput [0](2,3.5){\psk@Reactif@Becher }\endpspicture \end@SpecialObj \pstDosage [glassType=erlen,burette=false]
+% \end{pspicture}
+
+

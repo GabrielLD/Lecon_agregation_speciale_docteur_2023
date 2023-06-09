@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu May 25 11:40:53 2023
+
+@author: gld
+"""
+
+import numpy as np
+
+
+xprime = 6.5e-2
+fprime = 50e-2
+
+
+x = 300e-6
+delta = 25e-2
+
+beta = np.arctan(xprime/fprime)
+print(beta)
+
+alpha = np.arctan(x/delta)
+print(alpha)
+
+G = beta/alpha
+print(G)
+
+Gtheo = 20*6.3
+print(Gtheo)
+
+#%%
+
+xprime = 15e-2
+x = 300e-6
+
+beta = np.arctan(xprime/fprime)
+print(beta)
+
+alpha = np.arctan(x/delta)
+print(alpha)
+
+G = beta/alpha
+print(G)
+
+Gtheo = 40*6.3
+print(Gtheo)
+
+print((G-Gtheo)/Gtheo)
+
+#%% Grandissement
+
+D = 71.7e-2 #m
+x = 5.25e-2 # m
+xprime = 300e-6#m
+
+gamma = x/xprime
+
+f = D/(gamma+1)
+print(f)
+
+Delta = 160e-3 # m
+Grandissement = Delta/f
+print(Grandissement)

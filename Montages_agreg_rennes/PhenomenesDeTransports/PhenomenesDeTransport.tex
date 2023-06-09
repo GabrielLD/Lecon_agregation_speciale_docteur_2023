@@ -1,0 +1,185 @@
+% !TeX root = PhenomenesDeTransport.tex
+%!TeX root = "latex-workshop.latex.build.forceRecipeUsage": false,
+%!TEX program = pdflatex
+\documentclass[french]{article}
+
+\input{pckg.tex}
+
+\begin{document}
+\tikzset{every shadow/.style={opacity=1}}
+
+\global\mdfdefinestyle{doc}{backgroundcolor=white, shadow=true, shadowcolor=propositiono, linewidth=1pt, linecolor=black, shadowsize=5pt}
+\global\mdfdefinestyle{titr}{backgroundcolor=titref, shadow=true, shadowcolor=propositiono, linewidth=1pt, linecolor=black, shadowsize=5pt}
+\global\mdfdefinestyle{theo}{backgroundcolor=theof, shadow=true, shadowcolor=theoo, linewidth=1pt, linecolor=theol, shadowsize=5pt}
+\global\mdfdefinestyle{prop}{backgroundcolor=theof, shadow=true, shadowcolor=propositiono, linewidth=1pt, linecolor=theol, shadowsize=5pt}
+\global\mdfdefinestyle{def}{backgroundcolor=definitionf, shadow=true, shadowcolor=definitiono, linewidth=1pt, linecolor=definitionl, shadowsize=5pt}
+\global\mdfdefinestyle{histo}{backgroundcolor=histf, shadow=true, shadowcolor=propositiono, linewidth=1pt, linecolor=black, shadowsize=5pt}
+\global\mdfdefinestyle{avert}{backgroundcolor=white, shadow=true, shadowcolor=averto, linewidth=1pt, linecolor=avertl, shadowsize=5pt}
+\global\mdfdefinestyle{met}{backgroundcolor=metf, shadow=true, shadowcolor=meto, linewidth=1pt, linecolor=metl, shadowsize=5pt}
+\global\mdfdefinestyle{rem}{backgroundcolor=metf, shadow=true, shadowcolor=meto, linewidth=1pt, linecolor=metf, shadowsize=5pt}
+\global\mdfdefinestyle{exo}{backgroundcolor=exef, shadow=true, shadowcolor=propositiono, linewidth=1pt, linecolor=exef, shadowsize=5pt}
+\global\mdfdefinestyle{not}{backgroundcolor=definitionf, shadow=true, shadowcolor=propositiono, linewidth=1pt, linecolor=black, shadowsize=5pt}
+\global\mdfdefinestyle{proto}{backgroundcolor=protf, shadow=true, shadowcolor=proto, linewidth=1pt, linecolor=protl, shadowsize=5pt}
+
+%%%%%%
+
+\begin{center}
+	\begin{mdframed}[style=titr, leftmargin=55pt, rightmargin=55pt, innertopmargin=8pt, innerbottommargin=8pt, innerrightmargin=10pt, innerleftmargin=10pt]
+		
+		
+		\begin{center}
+			\large{\textbf{Montage}} \\
+			\Large{\textbf{Phénomènes de transport}}
+		\end{center}
+		
+	\end{mdframed}
+\end{center}
+
+\section*{Introduction}
+
+Les phénomènes de transports sont omniprésents dans notre quotidien. Dès que nous voulons ajouter du sucre dans du café on touille avec la cuillère afin de répartir les morceaux dans toute la solution. Nos bâtiments sont conçus pour isoler nos pièces de l'extérieur afin d'éviter d'avoir trop froid l'hiver (résistance thermique). 
+
+De manière générale, tous ces phénomènes diffusifs font apparaître une échelle caractéristique $L^2\approx Dt$ avec $t$ un temps caractéristique. 
+
+\section{Étude de la conductivité du cuivre}
+
+L'état métallique est défini par ses propriétés électroniques dues à la liaison métallique qui, contrairement à la liaison covalente ou la liaison ionique, est assurée par des électrons délocalisés. C'est l'état le plus fréquent des éléments chimiques. La principale raison à la bonne conduction électrique de ces matériaux vient de la liaison métallique: les atomes forment des structures 3D, les mailles, qui se répètent. À l'intérieur les électrons à peu près libres circulent dans un réseau de cations. À une conductivité électrique est associée une bonne conductivité de la chaleur. 
+
+La résistance augmente avec la température pour un métal. On peut utiliser cette caractéristique pour réaliser un capteur de température. On se propose d'étudier le transport de charges dans un métal en mesurant la conductivité électrique $\sigma$ d'un fil de cuivre d'électricien ($S\approx 1.5~\rm mm^2$) en mesurant la différence de potentiel provoquée par le passage d'un courant. Le cuivre étant un bon conducteur de l'électricité, il faut un courant important et un voltmètre sensible.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics*[width=.5\textwidth]{ConductiviteCuivre.png}
+	\caption*{Mesure à température ambiante, $R=10~\rm \Omega$ (rhéostat), $U$ multimètre (Kethley), $I$ source de courant continu.}
+\end{figure}
+
+Le rhéostat permet de controler le courant et évite à l'alimentation de débiter dans une charge de très faible impédance. Le fil, d'environ 3 m de lond est dénudé tous les 40 cm pour permettre le branchement du voltmètre via des pinces crocodiles. On mesure la tension entre un point de départ et les points successifs de prise de mesure. Voici les résultats obtenus pour un courant $I = 2.01~\rm A$. On a représenté sur la figure suivante la tension $U(x)$ aux bornes du fil de longueur $x$
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.5\textwidth]{ConductiviteDuCuivre.png}
+	\caption{Résultats}
+\end{figure}
+
+On obtient une loi conforme à la loi d'Ohm : 
+
+\begin{equation}
+	\vec{j}=\sigma\vec{E}=\sigma\vec{\nabla}V.
+\end{equation}
+
+La dépendance au potentiel en régime continu est formellement identique à la loi de Fourier de la diffusion thermique.
+
+\begin{equation}
+	j = \dfrac{I}{S} = \sigma\dfrac{U}{x}.
+\end{equation}
+Soit : 
+\begin{equation}
+	U = \dfrac{I}{\sigma S}x = \dfrac{I}{\pi R^2\sigma}x.
+\end{equation}
+
+La pente de la droite obtenue permet de mesurer la conductivité électrique du cuivre. On trouve dans le Handbook une résistivité électrique $\rho=1.68E-8~\rm \Omega . m$ pour du cuivre pur à $T=20^\circ C$. Soit $\sigma = 58,4E6 \Omega^{-1}.m^{-1}$
+
+\begin{ombreremarque}
+	\begin{remarque}
+		Calcul d'incertitudes
+	\end{remarque}
+\end{ombreremarque}
+
+
+\section{Mesure du coefficient conducto-convectif}
+
+\subsection{Caractéristique thermique}
+
+La plupart des métaux sont de bons conducteurs de la chaleur lorsqu'on leur applique un gradient de température, ils réagissent de façon linéaire par un flux de chaleur qui s'y oppose. Ce comportement s'exprime dans un milieu linéaire et isotrop par la loi de Fourier: 
+\begin{equation}
+	\vec{j} = -\lambda\vec{\nabla}T
+\end{equation}
+
+avec $\vec{j}$ la densité de flux thermique ($\rm W.m^{-2}$) et $\lambda$ la conductivité thermique ($W.m^{-1}.K^{-1}$). Cette loi n'est pas exclusive aux métaux mais leur conductivité thermique $\lambda$ est en générale élevée donc il est intéressant de la mesurer.
+
+L'équation de diffusion de la chaleur est donnée par : 
+
+\begin{equation}
+	\dfrac{\partial^2T}{\partial x^2}-\dfrac{2h}{\lambda R}T = 0.
+\end{equation}
+
+En résolvant cette équation on obtient les solutions du type : 
+
+\begin{equation}
+	T = A{\rm e}^{\sqrt{\frac{2h}{R\lambda}}x}+B{\rm e}^{-\sqrt{\frac{2h}{R\lambda}}x}
+\end{equation}
+
+La température décroît suivant une exponentielle décroissante avec une constante d'atténuation fonction de la conductivité thermique $\lambda$ et du coefficient latéral d'échange conducto-convectif $h$.
+\begin{figure}[ht]
+	\centering
+	\caption{Figure}
+\end{figure}
+
+\subsection{Mesure du coefficient $h$}
+
+Il peut être mesuré si on dispose d'un échantillon d'une des barres. Le choix du métal n'a pas d'importance mais il faut que ce soit une tige de même diamètre car $h$ en dépend. L'idée consiste à chauffer l'échantillon (on peut le mettre dans un bain thermostaté par exemple). Puis relever l'évolution de la température lorsqu'on laisse refroidir. Si on raisonne sur le flux de chaleur on a alors avec m la masse de l'échantillon et $C_m$ sa capactié thermique massique : 
+
+\begin{equation}
+	-mC_m\dfrac{dT}{dt}=hS_{lateral}(T-Tamb)
+\end{equation}
+
+soit 
+\begin{equation}
+	\dfrac{dT}{dt}+\dfrac{1}{\tau}T=\dfrac{Tamb}{\tau}~\text{avec}~\tau=\dfrac{mC_m}{hS}.
+\end{equation}
+
+Et la solution est du type: 
+
+\begin{equation}
+	T(t)=Tamb+(T_C-Tamb){\rm e}^{-t/\tau}.
+\end{equation}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.5\textwidth]{coefficientConductoconvectifDural.png}
+	\caption{Mesure de la variation de température d'une tige de dural en fonction dutemps}
+\end{figure}
+
+\begin{equation}
+	\tau= \dfrac{mC_{m}}{h S_{\rm lateral}}
+\end{equation}
+La capacité calorifique massique du cuivre : $Cm = 385 J/kg/K$
+Pour le cuivre Philipe a obtenu $h=10.8~\rm W/K/m2$.
+
+\section{Mesure du coefficient de diffusion du glycérol dans l'eau}
+L'eau et le glycerol ont des indices optiques différents, la diffusion de l'un dans l'autre crée un gradient de concentration, et donc d'indice dans la zone de mélange. On propose d'étudier la déviation d'un faisceau lumineux par le gradient d'indice pour mesurer la diffusivité du glycérol dans l'eau. 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.45\textwidth]{principeglycerol.png}
+	\includegraphics[width=.45\textwidth]{manipglycerol.png}
+	\caption{Schéma de l'experience}
+\end{figure}
+Si la déviation $\alpha$ du rayon est petite et dans la limite où l'indice est proportionnel à la concentration la déviation maximum vaut alors : 
+\begin{equation}
+	\alpha = \dfrac{(n_{\rm gly}-n_{\rm eau})c_0 d}{2\sqrt{\pi D t}}.
+\end{equation}
+
+Où $d$ est la largeur de la cuve, $D$ est la diffusivité, $t$, le temps et $c_0$ la fraction volumique initiale du glycérol. Les angles ne sont pas petits, surtout au début. On calcule $\alpha$ sachant que \begin{equation}
+	\tan{\alpha} = \dfrac{h}{L}.
+\end{equation}
+
+Avec $L$ la distance cuve/écran. On trace alors $1/\alpha^2$ en fonction du temps. On devrait obtenir une droite si l'expérience s'est bien déroulée.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics*[width = .6\textwidth]{DiffusionDuGlycerol.png}
+	\caption{Mesure du coefficience de diffusion du glycerol dans l'eau}
+\end{figure}
+
+\begin{equation}
+	D = (2.13\pm 0.15) \times 1.10^{-10}~\rm m^2.s^{-1}.
+\end{equation}
+
+Dans le Handbook on trouve $D = $, dans le Quaranta $D=4E-10\rm m^2.s^{-1}$.
+
+Le coefficient de diffusion est homogène à une longueur au carré qui divise un temps. On peut associer une durée caractéristique $\tau$ à une distance de diffusion donnée: 
+\begin{equation}
+	\tau = \dfrac{L^2}{D} = \dfrac{1E-2}{2.13E-10} = 5 \rm~jours 
+\end{equation}
+On invoque un temps initial mal défini puisqu'il faut un temps pour verser le glycérol dans l'eau \textbf{lentement} pour éviter les remous. Ce $t_0$ impliquerait que le mélange a commencé avant même que les deux liquides aient été mis en contact. Deux raisons peuvent expliquer ce $t0$ : Le modèle ne décrit pas bien ce qui se passe aux temps court lorsque le gradient de concentration est très élevé. Il faudrait considérer une distance $d$ effective, beaucoup plus faible que l'épaisseur de la cuve en début d'expérience. Une autre difficulté est de verser la glycérine sans faire de remous (mouvement de convection, bulles). On se retrouve donc dans un cas où il y a déjà eu lieu du mélange et donc une diffusion a déjà eu lieu. 
+\end{document}
