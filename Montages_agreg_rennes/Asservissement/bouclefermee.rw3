@@ -1,0 +1,228 @@
+EVARISTE REGRESSI WINDOWS 1.0
+£6 NOM VAR
+f
+Vs
+Vs60
+logf
+G
+G2
+£6 GENRE VAR
+0
+0
+0
+1
+1
+1
+£6 LARGEUR VAR
+136
+136
+136
+136
+136
+136
+£6 UNITE VAR
+Hz
+V
+V
+
+dB
+dB
+£6 FORMAT VAR
+0
+0
+0
+0
+0
+0
+£6 PRECISION VAR
+6
+6
+6
+6
+6
+6
+£3 SIGNIF VAR
+
+
+
+£2 NOM CONST
+KM
+Vlim
+£2 UNITE CONST
+
+V
+£2 SIGNIF CONST
+
+
+£2 FORMAT CONST
+0
+0
+£2 PRECISION CONST
+6
+6
+£2 AFF CONST
+0
+0
+£2 PANEL CONST
+KM
+Vlim
+£1 INCERT GLB
+ 0.00000000000000E+0000
+£4 NOM PARAM
+G01
+f01
+G0
+f0
+£4 UNITE PARAM
+dB
+
+dB
+
+£1 TRIGO
+1
+£1 uniteSI
+1
+£5 MEMO GRANDEURS
+logf=log(f)
+Ve = 1.52_V
+G=20*log(Vs/Ve)_dB
+G2=20*log(Vs60/Ve)_dB
+
+£6 MODELISATION
+G=G01-20*log(abs(1+j*f/f01))
+G(f):=G01
+G(f):=G01-20*log(f/f01)
+G2=G0-20*log(abs(1+j*f/f0))
+G2(f):=G0
+G2(f):=G0-20*log(f/f0)
+£2 ACQUISITION
+CLAVIER
+
+£0 GRAPHE VAR
+&2 LIGNE
+1
+1
+&2 COULEUR
+0
+16711680
+&2 MOTIF
+0
+1
+&2 X
+f
+f
+&2 Y
+G
+G2
+&2 TRACE
+3
+3
+&2 MONDE
+1
+1
+&3 GRADUATION
+1
+0
+0
+&3 ZERO
+0
+1
+1
+&3 INVERSE
+0
+0
+0
+&25 OPTIONS
+9
+2
+1
+3
+3
+0
+0
+0
+0
+-1
+0
+0
+5
+0
+1
+1
+1
+0
+0
+32
+32
+1
+ 0.00000000000000E+0000
+0
+0
+&1 MODELECALC
+1
+£1 PAGE COMMENT
+
+&16 VALEUR VAR
+ 1.00000000000000E+0001  1.26400000000000E+0000                     Nan 
+ 2.00000000000000E+0001  1.26400000000000E+0000                     Nan 
+ 5.00000000000000E+0001  1.26500000000000E+0000                     Nan 
+ 7.50000000000000E+0001  1.26500000000000E+0000                     Nan 
+ 1.00000000000000E+0002  1.26500000000000E+0000  1.26500000000000E+0000 
+ 2.50000000000000E+0002  1.26500000000000E+0000                     Nan 
+ 5.00000000000000E+0002  1.26200000000000E+0000  1.26200000000000E+0000 
+ 7.50000000000000E+0002  1.25600000000000E+0000                     Nan 
+ 1.00000000000000E+0003  1.24800000000000E+0000  1.24700000000000E+0000 
+ 1.50000000000000E+0003  1.22500000000000E+0000                     Nan 
+ 2.00000000000000E+0003  1.19600000000000E+0000  1.19500000000000E+0000 
+ 2.50000000000000E+0003  1.16100000000000E+0000                     Nan 
+ 3.00000000000000E+0003  1.12300000000000E+0000  1.12200000000000E+0000 
+ 3.50000000000000E+0003  1.08200000000000E+0000                     Nan 
+ 4.00000000000000E+0003  1.04000000000000E+0000  1.04000000000000E+0000 
+ 4.50000000000000E+0003  9.98000000000000E-0001                     Nan 
+&16 INCERT VAR
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+                    Nan                     Nan                     Nan 
+&2 VALEUR CONST
+-5.93423812775203E-0001
+ 3.11000526444499E-0001
+&2 INCERT CONST
+ 1.56796152405438E-0001
+ 2.14041232395000E-0002
+&2 OPTIONS
+1
+1
+&4 VALEUR PARAM
+-1.59165570288955E+0000
+ 5.77182417885788E+0003
+-1.59062853302517E+0000
+ 5.75959522956197E+0003
+&4 INCERT PARAM
+ 1.78732147945602E-0003
+ 7.44352846613048E+0000
+ 3.04093378226951E-0003
+ 1.21999857265020E+0001
+&4 STDEV PARAM
+ 3.83380457343316E-0003
+ 1.59663685598499E+0001
+ 8.44163217958015E-0003
+ 3.38671603767696E+0001
+&2 DEBUT
+0
+4
+&2 FIN
+15
+14
