@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 24 16:38:57 2023
+
+@author: gld
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.optimize as spo
+
+
+#%% PARAMETRES
+alpha = 4.25 #4.75 # deg
+ualpha = 0.25 # deg
+rho = 789 # kg/m3
+g = 9.81 # m
+#%% MESURES
+
+h = np.array([-0.3, 0.2, 0.6, 1.25, 2, 3, 4.85, 6.65, 8.60, 12.20]) # cm
+h = h*1e-2
+uh = 0.2*1e-2
+v = np.array([0, 3.2, 4.2, 5.2, 6.1, 7.3, 9.1, 10.5, 11.8, 14.1]) # m/s
+uv = v*0.3/100
+uv2 =np.sqrt(2)*uv
+Dp = rho*g*h*np.sin(alpha*np.pi/180)
+#np.cos(alpha*np.pi/180)*ualpha
+uDp = np.sqrt((uh/h)**2+(ualpha*np.pi/180)**2*(1/np.tan(alpha))**2)
+#uDp = np.sqrt((uh**2)*(rho*g*np.sin(alpha*np.pi/180))**2*+(rho*g*np.cos(alpha*np.pi/180))**2*(ualpha*np.pi/180)**2)
+#%%
+
+x = Dp
+ux = uDp
+y = v**2
+uy = uv2
+
+def f(x,p):
+    "Pertes de charges"
+    rhoair = p
+    return 2*x/rhoair
+
+# derivee de la fonction f par rapport à la variable de controle x
+def Dx_f(x,p):
+    rhoair =p
+    return 2/rhoair
+#fonction d'écart pondérée par les erreurs
+def residual(p, y, x):
+    return (y-f(x,p))/np.sqrt(uy**2+(Dx_f(x,p)*ux)**2)
+
+p0 = np.array([1])
+result = spo.leastsq(residual, p0, args = (y,x), full_output=True)
+
+popt = result[0] 
+pcov =result[1]
+# incertitudes types 
+upopt = np.sqrt(np.abs(np.diagonal(pcov)))
+# on détermine le chi2
+chi2r = np.sum(np.square(residual(popt,y,x)))/(x.size-popt.size)
+print(chi2r)
+
+#%%
+plt.figure()
+plt.errorbar(Dp, v**2,xerr = uDp, yerr= uv2, fmt= '+')
+abscisse = np.linspace(0, 70,1000)
+plt.plot(abscisse, f(abscisse, popt))
+plt.xlabel('Pression (Pa)')
+plt.ylabel('vitesse$^2$ (m²/s²)')
+

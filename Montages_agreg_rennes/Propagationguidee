@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 26 09:58:01 2023
+
+@author: gld
+"""
+
+import numpy as np
+
+
+#%%
+femis = 40e3 # Hz Quarz qui oscille à sa fréquence propre
+c = 340# m/s
+lambda_emis = c*1e3/femis
+print(lambda_emis)
+
+#%% Dimensions du guide pris au pied à coulisse
+a = 12.5 # mm
+b = 12.5# mm
+
+
+n= np.array([0,1,2,3,4,5])
+
+mun1 = np.sqrt(1+n**2)
+print(mun1)
+lambda_c1 = 1/(mun1/2/a)
+print(lambda_c1) 
+
+lambdag = pow(1/lambda_emis**2-1/lambda_c1**2,-1/2 )
+print(lambdag)
+vg = c*lambda_emis/lambdag
+print(vg)
+#%%
+mun2 = np.sqrt(2**2+n**2)
+print(mun2)
+lambda_c2 = 1/(mun2/2/a)
+print(lambda_c2) 
+lambdag = pow(1/lambda_emis**2-1/lambda_c2**2,-1/2 )
+print(lambdag)
+vg = c*lambda_emis/lambdag
+print(vg)
+#%%
+mun3 = np.sqrt(3**2+n**2)
+print(mun3)
+lambda_c3 = 1/(mun3/2/a)
+print(lambda_c3) 
+
+#%%
+mun4 = np.sqrt(4**2+n**2)
+print(mun4)
+lambda_c4 = 1/(mun4/2/a)
+print(lambda_c4)
+
+#%% vitesse des modes
+
+vg = np.array([319.7, 298.1, 220.8, 249.29, 220.86, 93.23])
+lg = np.array([9.03, 9.69, 13.08,11.59, 13.08, 30.99])*1e-3
+fg = vg/lg
+print(fg) 
+D = 49e-2 # m
+
+DeltaT = D/vg
+print(DeltaT)
